@@ -11,8 +11,9 @@ public class PictureTester {
      * Method to test the PictureExplorer
      */
     public static void testExplorer() {
-        Picture beach = new Picture("beach.jpg");
-        beach.explore();   
+        Picture myPic = new Picture("cat.jpg");
+        Picture smallP = myPic.scale(0.50,0.50);
+        smallP.write("smallCat.jpg");   
     }
 
     /**
