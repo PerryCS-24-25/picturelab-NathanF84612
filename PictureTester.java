@@ -85,6 +85,11 @@ public class PictureTester {
         blueKarl.explore();
     }
 
+    public static void testNegate(){
+        Picture cat = new Picture("cat.jpg");
+        cat.negate();
+        cat.explore();
+    }
     /**
      * Main method for testing. Every class can have a main method in Java
      */
