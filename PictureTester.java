@@ -10,12 +10,14 @@ public class PictureTester {
     /**
      * Method to test the PictureExplorer
      */
-    public static void testExplorer() {
-        Picture myPic = new Picture("cat.jpg");
-        Picture smallP = myPic.scale(0.50,0.50);
-        smallP.write("smallCat.jpg");   
-    }
-
+    // public static void testExplorer() {
+        //Picture blueKarl = new Picture("blueKarl.jpg");
+        //blueKarl.explore();  
+        //Picture myPic = new Picture("cat.jpg");
+        //Picture smallP = myPic.scale(0.50,0.50);
+        //smallP.write("smallCat.jpg");    
+    //}
+    
     /**
      * Method to test zeroBlue
      */
@@ -65,6 +67,24 @@ public class PictureTester {
         temple2.explore();
     }
 
+    public static void testKeepOnlyBlue(){
+        Picture blueKarl = new Picture("blue-karl.jpg");
+        blueKarl.keepOnlyBlue();
+        blueKarl.explore();
+    }
+
+    public static void testKeepOnlyRed(){
+        Picture caterpillar = new Picture("caterpillar.jpg");
+        caterpillar.keepOnlyRed();
+        caterpillar.explore();
+    }
+
+    public static void testKeepOnlyGreen(){
+        Picture blueKarl = new Picture("blue-karl.jpg");
+        blueKarl.keepOnlyGreen();
+        blueKarl.explore();
+    }
+
     /**
      * Main method for testing. Every class can have a main method in Java
      */
@@ -73,7 +93,7 @@ public class PictureTester {
         // and comment out the ones you don't want
         // to run
 
-        testExplorer();
+        //testExplorer();
         //testScale();
         //testZeroBlue();
         //testKeepOnlyBlue();
