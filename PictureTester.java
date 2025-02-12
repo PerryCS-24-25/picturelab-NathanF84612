@@ -90,6 +90,12 @@ public class PictureTester {
         cat.negate();
         cat.explore();
     }
+
+    public static void testGrayscale(){
+        Picture cat = new Picture("cat.jpg");
+        cat.grayscale();
+        cat.explore(); 
+    }
     /**
      * Main method for testing. Every class can have a main method in Java
      */
@@ -105,7 +111,7 @@ public class PictureTester {
         //testKeepOnlyRed();
         //testKeepOnlyGreen();
         //testNegate();
-        //testGrayscale();
+        testGrayscale();
         //testFixUnderwater();
         //testMirrorVertical();
         //testMirrorTemple();
